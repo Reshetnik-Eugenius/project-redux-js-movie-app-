@@ -3,7 +3,7 @@ import MovieAPI from "../../common/API/movieAPI";
 import { API_KEY } from "../../common/API/movieAPIKey";
 
 export const fetchAsyncMovies = createAsyncThunk('movies/fetchAsyncMovies', async () => {
-    const movieTitle = "Harry";
+    const movieTitle = "Lion";
     const response = await MovieAPI.get(
         `?apiKey=${API_KEY}&s=${movieTitle}&type=movie`)
     
@@ -11,7 +11,7 @@ export const fetchAsyncMovies = createAsyncThunk('movies/fetchAsyncMovies', asyn
 })
 
 export const fetchAsyncSeries = createAsyncThunk("movies/fetchAsyncSeries", async () => {
-	const seriesTitle = "Matrix";
+	const seriesTitle = "King";
 	const response = await MovieAPI.get(
 		`?apiKey=${API_KEY}&s=${seriesTitle}&type=series`
 	);
