@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import {
 	fetchAsyncMovieDetail,
-	getSelectMovie
+	getSelectMovie,
+	removeSelectMovie,
 } from "../../features/movies/movieSlice";
 import './MovieDetail.scss'
 
@@ -13,7 +14,11 @@ const MovieDetail = () => {
     const data = useSelector(getSelectMovie)
 
     useEffect(() => {
-		dispatch(fetchAsyncMovieDetail(imdbID));
+        dispatch(fetchAsyncMovieDetail(imdbID));
+        
+        return (() => {
+            dispatch(removeSelectMovie());
+        });
 	}, [dispatch, imdbID]);
 
     return (
