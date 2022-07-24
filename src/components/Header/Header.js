@@ -14,6 +14,8 @@ const Header = () => {
 
 	const submitHandler = (e) => {
 		e.preventDefault();
+		if (searchStr === '')
+			return alert('Please enter search ...');
 		dispatch(fetchAsyncMovies(searchStr));
 		dispatch(fetchAsyncSeries(searchStr));
 		setSearch('');
