@@ -13,8 +13,6 @@ const Home = () => {
 		dispatch(fetchAsyncSeries(seriesTitle));
 	}, [dispatch]);
 
-
-    
     return (
 		<div>
 			<div className="banner-img"></div>
