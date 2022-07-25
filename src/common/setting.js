@@ -7,9 +7,27 @@ export const Setting = {
 
 	responsive: [
 		{
-			breakpoint: 1500,
+			breakpoint: 2000,
 			settings: {
 				slidesToShow: 4,
+				slidesToScroll: 2,
+				infinite: true,
+				dots: false,
+			},
+		},
+		{
+			breakpoint: 1900,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 2,
+				infinite: true,
+				dots: false,
+			},
+		},
+		{
+			breakpoint: 1400,
+			settings: {
+				slidesToShow: 3,
 				slidesToScroll: 2,
 				infinite: true,
 				dots: false,
