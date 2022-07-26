@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import MovieList from '../MovieList/MovieList';
+import MovieList from '../../components/MovieList/MovieList';
 import { useDispatch } from 'react-redux';
 import {fetchAsyncMovies, fetchAsyncSeries} from '../../features/movies/movieSlice'
 

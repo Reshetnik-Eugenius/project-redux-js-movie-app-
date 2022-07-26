@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Home from './components/Home/Home'
-import PageNotFound from './components/PageNotFound/PageNotFound'
+import Home from './pages/Home/Home'
+import PageNotFound from './pages/PageNotFound/PageNotFound'
 import MovieDetail from './components/MovieDetail/MovieDetail'
 
 function App() {
